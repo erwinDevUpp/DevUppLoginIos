@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D5B5FC5892EFDB61AD4E72B /* Pods_DevUppLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6277BB21BDE1016F0291B76B /* Pods_DevUppLogin.framework */; };
 		EC3AA7141E41201B0063DB69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3AA7131E41201B0063DB69 /* AppDelegate.swift */; };
 		EC3AA7161E41201B0063DB69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3AA7151E41201B0063DB69 /* ViewController.swift */; };
 		EC3AA7191E41201B0063DB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3AA7171E41201B0063DB69 /* Main.storyboard */; };
 		EC3AA71B1E41201B0063DB69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3AA71A1E41201B0063DB69 /* Assets.xcassets */; };
 		EC3AA71E1E41201B0063DB69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3AA71C1E41201B0063DB69 /* LaunchScreen.storyboard */; };
+		EC3AA7261E4286E70063DB69 /* main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3AA7251E4286E70063DB69 /* main2.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CCE9D4957D329AF95055AFD /* Pods-DevUppLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevUppLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevUppLogin/Pods-DevUppLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		544BBA7426028895BD7C3C8C /* Pods-DevUppLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevUppLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevUppLogin/Pods-DevUppLogin.release.xcconfig"; sourceTree = "<group>"; };
-		6277BB21BDE1016F0291B76B /* Pods_DevUppLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevUppLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3AA7101E41201B0063DB69 /* DevUppLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevUppLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3AA7131E41201B0063DB69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC3AA7151E41201B0063DB69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +25,7 @@
 		EC3AA71A1E41201B0063DB69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3AA71D1E41201B0063DB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC3AA71F1E41201B0063DB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3AA7251E4286E70063DB69 /* main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main2.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5B5FC5892EFDB61AD4E72B /* Pods_DevUppLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,21 +48,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7D5F842B3A398EB32C471E24 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6277BB21BDE1016F0291B76B /* Pods_DevUppLogin.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		EC3AA7071E41201A0063DB69 = {
 			isa = PBXGroup;
 			children = (
 				EC3AA7121E41201B0063DB69 /* DevUppLogin */,
 				EC3AA7111E41201B0063DB69 /* Products */,
 				561C69715BCAC721DF7F679A /* Pods */,
-				7D5F842B3A398EB32C471E24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +74,7 @@
 				EC3AA71A1E41201B0063DB69 /* Assets.xcassets */,
 				EC3AA71C1E41201B0063DB69 /* LaunchScreen.storyboard */,
 				EC3AA71F1E41201B0063DB69 /* Info.plist */,
+				EC3AA7251E4286E70063DB69 /* main2.storyboard */,
 			);
 			path = DevUppLogin;
 			sourceTree = "<group>";
@@ -152,6 +143,7 @@
 			files = (
 				EC3AA71E1E41201B0063DB69 /* LaunchScreen.storyboard in Resources */,
 				EC3AA71B1E41201B0063DB69 /* Assets.xcassets in Resources */,
+				EC3AA7261E4286E70063DB69 /* main2.storyboard in Resources */,
 				EC3AA7191E41201B0063DB69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,7 +178,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BEC4FB9BEAB450C8DC6F87AF /* 📦 Embed Pods Frameworks */ = {
@@ -376,6 +368,7 @@
 				EC3AA7241E41201B0063DB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
