@@ -21,7 +21,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="DevUppLogin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="DevUppLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -371,10 +371,10 @@
             </objects>
             <point key="canvasLocation" x="41" y="43"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="Q7q-sb-CNf">
             <objects>
-                <viewController id="Qz4-kc-Oa0" sceneMemberID="viewController">
+                <viewController id="Qz4-kc-Oa0" customClass="SignUpViewController" customModule="DevUppLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6ae-WR-GEV"/>
                         <viewControllerLayoutGuide type="bottom" id="AYe-Eg-KEg"/>
@@ -416,7 +416,11 @@
                                         <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-n5-OGo"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-n5-OGo">
+                                        <connections>
+                                            <action selector="showDate:" destination="Qz4-kc-Oa0" eventType="touchUpInside" id="t6Q-pF-jda"/>
+                                        </connections>
+                                    </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FSH-c0-aVw">
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="12"/>
@@ -461,6 +465,9 @@
                                                 <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="confirmSignUp:" destination="Qz4-kc-Oa0" eventType="touchUpInside" id="3XC-bH-KSE"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By clicking Register you agree to our" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auk-sb-MVx">
                                         <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="12"/>
@@ -478,7 +485,7 @@
                                             <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZA-Ri-Ta9">
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9K5-6x-hKA">
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9K5-6x-hKA">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="216" id="V9w-Tm-vXE"/>
                                                 </constraints>
@@ -489,6 +496,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lls-hh-ZjA">
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Pick"/>
+                                                <connections>
+                                                    <action selector="pickDate:" destination="Qz4-kc-Oa0" eventType="touchUpInside" id="zU9-DH-DpZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -571,6 +581,18 @@
                             <constraint firstItem="AYe-Eg-KEg" firstAttribute="top" secondItem="Ugj-CN-309" secondAttribute="bottom" id="zmk-fz-XYd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="birthday" destination="QIs-Ay-51o" id="ahv-Ma-fcF"/>
+                        <outlet property="datePicker" destination="9K5-6x-hKA" id="olP-Gh-nQ3"/>
+                        <outlet property="dateView" destination="ca4-6m-Tx4" id="HUx-QK-hf3"/>
+                        <outlet property="email" destination="FSH-c0-aVw" id="5It-GW-qWH"/>
+                        <outlet property="emailValidation" destination="43n-lI-4CB" id="QY6-h8-ut9"/>
+                        <outlet property="name" destination="Z4W-eX-uIk" id="yUM-9P-RIy"/>
+                        <outlet property="password" destination="ilo-lU-7Fn" id="z4B-z1-Lil"/>
+                        <outlet property="passwordConfirmation" destination="KAK-3o-BvL" id="RZP-xe-EyB"/>
+                        <outlet property="passwordValidation" destination="dkj-me-pgw" id="MOf-Xg-HDi"/>
+                        <outlet property="zipCode" destination="4fJ-aA-a8s" id="bOo-Gb-6lh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3So-RF-vZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,6 +18,7 @@
 		EC5553E31E46EE55007742C3 /* WarningMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553E21E46EE55007742C3 /* WarningMessage.swift */; };
 		EC5553E51E46EE9F007742C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553E41E46EE9F007742C3 /* Constants.swift */; };
 		EC5553E71E470014007742C3 /* SignInMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553E61E470014007742C3 /* SignInMainViewController.swift */; };
+		EC5553E91E472125007742C3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553E81E472125007742C3 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EC5553E21E46EE55007742C3 /* WarningMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarningMessage.swift; sourceTree = "<group>"; };
 		EC5553E41E46EE9F007742C3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EC5553E61E470014007742C3 /* SignInMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInMainViewController.swift; sourceTree = "<group>"; };
+		EC5553E81E472125007742C3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				EC5553E21E46EE55007742C3 /* WarningMessage.swift */,
 				EC5553E41E46EE9F007742C3 /* Constants.swift */,
 				EC5553E61E470014007742C3 /* SignInMainViewController.swift */,
+				EC5553E81E472125007742C3 /* SignUpViewController.swift */,
 			);
 			path = DevUppLogin;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5553E51E46EE9F007742C3 /* Constants.swift in Sources */,
+				EC5553E91E472125007742C3 /* SignUpViewController.swift in Sources */,
 				EC5553E71E470014007742C3 /* SignInMainViewController.swift in Sources */,
 				EC5553E11E46EA0C007742C3 /* LoginViewController.swift in Sources */,
 				EC3AA7161E41201B0063DB69 /* ViewController.swift in Sources */,
