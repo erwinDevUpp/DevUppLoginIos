@@ -81,7 +81,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Qz4-kc-Oa0" kind="show" id="PXb-Sc-orh"/>
+                                            <segue destination="eLB-XF-Mog" kind="show" id="INh-ZH-GUd"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="NLT-28-Bv2">
@@ -598,10 +598,10 @@
             </objects>
             <point key="canvasLocation" x="745" y="721"/>
         </scene>
-        <!--View Controller-->
+        <!--Forgot Password View Controller-->
         <scene sceneID="fcS-GH-H8W">
             <objects>
-                <viewController id="eLB-XF-Mog" sceneMemberID="viewController">
+                <viewController id="eLB-XF-Mog" customClass="ForgotPasswordViewController" customModule="DevUppLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1qU-mm-dPe"/>
                         <viewControllerLayoutGuide type="bottom" id="ee2-aW-Oqf"/>
@@ -665,6 +665,9 @@
                                                 <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="nHn-DC-O6k" kind="show" id="nrj-q0-pur"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -705,6 +708,9 @@
                                         <state key="normal" title="Don't Have An Account? Click Here">
                                             <color key="titleColor" red="0.32156862749999998" green="0.0" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Qz4-kc-Oa0" kind="show" id="UhV-SY-Egg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -737,15 +743,18 @@
                             <constraint firstItem="Ks5-8p-fSt" firstAttribute="leading" secondItem="4HY-rg-Df6" secondAttribute="leadingMargin" constant="-20" id="its-wo-9ik"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="uKt-1Q-Yuc" id="zWs-Ni-dSY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0U-Dw-Lcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="41" y="721"/>
         </scene>
-        <!--View Controller-->
+        <!--Verify Code View Controller-->
         <scene sceneID="U9y-dx-tMs">
             <objects>
-                <viewController id="nHn-DC-O6k" sceneMemberID="viewController">
+                <viewController id="nHn-DC-O6k" customClass="VerifyCodeViewController" customModule="DevUppLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="41n-pG-sNW"/>
                         <viewControllerLayoutGuide type="bottom" id="ULy-p4-4AQ"/>
@@ -1072,6 +1081,9 @@
                                         <state key="normal" title="VERIFY">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="verifyCode:" destination="nHn-DC-O6k" eventType="touchUpInside" id="rou-dF-uIC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1764705882" green="0.0" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1142,6 +1154,6 @@
         <image name="x_img" width="34" height="34"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n9C-Dc-bFc"/>
+        <segue reference="Vhm-fZ-RLy"/>
     </inferredMetricsTieBreakers>
 </document>

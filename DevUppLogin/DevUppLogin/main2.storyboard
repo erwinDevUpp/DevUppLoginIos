@@ -18,10 +18,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Change Pass View Controller-->
         <scene sceneID="cjL-Rr-uwk">
             <objects>
-                <viewController id="oAZ-k1-G8H" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="changePassViewController" id="oAZ-k1-G8H" customClass="ChangePassViewController" customModule="DevUppLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aCk-TM-nQo"/>
                         <viewControllerLayoutGuide type="bottom" id="LKs-lu-cUl"/>
@@ -34,7 +34,6 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5Q-Gh-rAj">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="131" id="8g7-ya-AB6"/>
                                             <constraint firstAttribute="height" constant="20" id="DF8-LH-OiM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MarkMyWords" family="Mark My Words" pointSize="20"/>
@@ -164,6 +163,7 @@
                                     <constraint firstItem="dUj-H4-oxa" firstAttribute="top" secondItem="hvL-AP-Y1K" secondAttribute="bottom" constant="1" id="4xb-E4-GmQ"/>
                                     <constraint firstItem="nZ6-7u-b98" firstAttribute="leading" secondItem="wko-Gg-OhZ" secondAttribute="leading" id="67v-4G-BgE"/>
                                     <constraint firstItem="R3p-Hg-vga" firstAttribute="top" secondItem="nf4-Cb-Vgl" secondAttribute="bottom" constant="1" id="9af-gn-72x"/>
+                                    <constraint firstAttribute="trailing" secondItem="u5Q-Gh-rAj" secondAttribute="trailing" constant="20" id="9ho-0h-zR4"/>
                                     <constraint firstItem="yll-AJ-dff" firstAttribute="top" secondItem="dUj-H4-oxa" secondAttribute="bottom" constant="7" id="BwQ-JV-WWS"/>
                                     <constraint firstItem="R3p-Hg-vga" firstAttribute="trailing" secondItem="nf4-Cb-Vgl" secondAttribute="trailing" id="CCw-Cc-vJZ"/>
                                     <constraint firstItem="wko-Gg-OhZ" firstAttribute="top" secondItem="u5Q-Gh-rAj" secondAttribute="bottom" constant="26" id="DWH-BC-dB7"/>
@@ -192,6 +192,7 @@
                                     <constraint firstItem="PUf-lt-JFG" firstAttribute="top" secondItem="T7f-Bb-kaO" secondAttribute="bottom" constant="16" id="flV-9m-bc7"/>
                                     <constraint firstItem="mfX-xh-xjT" firstAttribute="leading" secondItem="JSZ-4y-yd9" secondAttribute="leading" id="fnX-yy-CQ0"/>
                                     <constraint firstItem="hvL-AP-Y1K" firstAttribute="leading" secondItem="nZ6-7u-b98" secondAttribute="leading" id="gnX-eq-Cgl"/>
+                                    <constraint firstItem="u5Q-Gh-rAj" firstAttribute="leading" secondItem="S5L-GQ-Gs1" secondAttribute="leading" constant="20" id="gu2-W7-tEZ"/>
                                     <constraint firstItem="dUj-H4-oxa" firstAttribute="leading" secondItem="hvL-AP-Y1K" secondAttribute="leading" id="iSi-H3-qto"/>
                                     <constraint firstItem="PUf-lt-JFG" firstAttribute="top" secondItem="S5L-GQ-Gs1" secondAttribute="top" constant="445" id="lA3-Lx-ahM"/>
                                     <constraint firstItem="PUf-lt-JFG" firstAttribute="top" secondItem="mfX-xh-xjT" secondAttribute="bottom" constant="1" id="lQu-Vw-hl4"/>

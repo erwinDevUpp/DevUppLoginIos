@@ -27,6 +27,11 @@ class ViewController: UIViewController {
             UserDefaults.standard.set(0, forKey: "loggedCode")
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        currentViewContrllersCount = self.navigationController?.viewControllers.count
+        self.navigationController?.isNavigationBarHidden = false
+    }
 
 
 }
