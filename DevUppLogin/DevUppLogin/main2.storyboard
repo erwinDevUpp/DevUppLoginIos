@@ -216,7 +216,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TMc-VC-MMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46" y="134"/>
+            <point key="canvasLocation" x="390" y="136"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FmY-Sa-0RE">
+            <objects>
+                <viewController storyboardIdentifier="homeViewController" id="u3s-8T-ldh" customClass="ViewController" customModule="DevUppLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c2t-Sm-SnQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="lw6-vo-gsL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eS2-4x-qo6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaB-Sn-FR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-321" y="135"/>
         </scene>
     </scenes>
 </document>
